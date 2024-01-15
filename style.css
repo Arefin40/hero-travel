@@ -21,15 +21,18 @@ select {
 
 h1 {
    font-size: 1.25rem;
+   font-weight: 800;
 }
 
 h2,
 h3 {
    font-size: 1.25rem;
+   font-weight: 700;
 }
 
 p {
    line-height: 1.625;
+   color: var(--text-secondary);
 }
 
 li {
@@ -102,6 +105,11 @@ a {
    border-radius: 0.25rem;
 }
 
+.heading,
+.sub-heading {
+   margin-bottom: 1rem;
+}
+
 /* ANCHOR Component Styles */
 .main-content {
    display: grid;
@@ -163,6 +171,33 @@ a {
    max-width: 25rem;
 }
 
+/* Popular Tours Section */
+.popular-tour-section {
+   display: grid;
+   row-gap: 1.5rem;
+   column-gap: 3.5rem;
+}
+
+.popular-tour-section .left-column {
+   display: grid;
+   row-gap: 1rem;
+   align-content: start;
+}
+
+.popular-tour-section ul.list {
+   margin-left: 1rem;
+   display: grid;
+   row-gap: 0.75rem;
+}
+
+.popular-tour-section ul.list > li {
+   list-style: disc;
+}
+
+.popular-tour-section > .image {
+   width: 100%;
+}
+
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
    body,
@@ -194,6 +229,14 @@ a {
       row-gap: 5.25rem;
       margin-top: 5.25rem;
       margin-bottom: 5.25rem;
+   }
+
+   .heading {
+      margin-bottom: 1.5rem;
+   }
+
+   .sub-heading {
+      margin-bottom: 3rem;
    }
 
    /* R: Header Section */
@@ -235,6 +278,19 @@ a {
       border-radius: 0.5rem;
       background-color: #fafafa4d;
       grid-template-columns: repeat(4, 1fr);
+   }
+
+   /* R: Popular Tours Section */
+   .popular-tour-section {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .popular-tour-section .left-column {
+      row-gap: 1.5rem;
+   }
+
+   .popular-tour-section ul.list {
+      row-gap: 1rem;
    }
 }
 
