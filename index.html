@@ -13,27 +13,80 @@
       />
    </head>
    <body>
-      <header id="header" class="container border">
-         <div class="logo-container">
-            <img src="icons/Logo.svg" alt="Logo" class="logo" />
-            <h1 class="logo-text">
-               Hero <span class="text-primary">Travel</span>
-            </h1>
-         </div>
+      <header class="container border">
+         <section class="header-section">
+            <div class="logo-container">
+               <img src="icons/Logo.svg" alt="Logo" class="logo" />
+               <h1 class="logo-text">
+                  Hero <span class="text-primary">Travel</span>
+               </h1>
+            </div>
 
-         <nav class="navigation">
-            <ul class="nav-menu text-secondary">
-               <li><a href="">Home</a></li>
-               <li><a href="">Packages</a></li>
-               <li><a href="">Testimonials</a></li>
-               <li><a href="">Blog</a></li>
-               <li><a href="">Contact</a></li>
-            </ul>
-         </nav>
+            <nav class="navigation">
+               <ul class="nav-menu text-secondary">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Packages</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+               </ul>
+            </nav>
 
-         <button class="icon-btn">
-            <img src="icons/Menu.svg" alt="menu-icon" class="icon" />
-         </button>
+            <button class="icon-btn">
+               <img src="icons/Menu.svg" alt="menu-icon" class="icon" />
+            </button>
+         </section>
       </header>
+
+      <main class="main-content container">
+         <!-- ANCHOR Hero Section -->
+         <section>
+            <div class="hero-section bg-image-wrapper">
+               <h1 class="hero-title text-center text-white">
+                  Explore Your Travel
+               </h1>
+               <p class="text-center text-white">
+                  Dolor sit amet consectetur. Nullam suspendisse vitae ultricies
+                  dolor adipiscing. In et odio enim ac quis sapien urna eu
+                  phasellus.
+               </p>
+               <div class="find-trip-form">
+                  <input
+                     type="text"
+                     name="destination"
+                     placeholder="Where"
+                     id="destination"
+                     class="input"
+                  />
+
+                  <select name="shift" id="shift" class="input">
+                     <option value="">When</option>
+                     <option value="morning">Shift-1 (Morning)</option>
+                     <option value="noon">Shift-2 (Noon)</option>
+                     <option value="evening">Shift-3 (Evening)</option>
+                     <option value="night">Shift-4 (Night)</option>
+                     <option value="late-night">Shift-5 (Late Night)</option>
+                  </select>
+
+                  <select name="class" id="class" class="input">
+                     <option value="">Select Type</option>
+                     <option value="economy">Economy</option>
+                     <option value="premium-economy">Premium Economy</option>
+                     <option value="business">Business</option>
+                     <option value="first-class">First Class</option>
+                  </select>
+
+                  <button class="btn btn-primary">
+                     <img
+                        src="icons/Search.svg"
+                        alt="search-icon"
+                        class="icon"
+                     />
+                     <span>Find now</span>
+                  </button>
+               </div>
+            </div>
+         </section>
+      </main>
    </body>
 </html>
