@@ -2,6 +2,7 @@
 :root {
    --primary-color: #ff5400;
    --text-secondary: #5a5a5a;
+   --border-color: lightgray;
 }
 
 * {
@@ -17,17 +18,139 @@ input {
    font-size: 14px;
 }
 
+h1 {
+   font-size: 1.25rem;
+}
+
+h2,
+h3 {
+   font-size: 1.25rem;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.btn,
+.icon-btn {
+   flex-shrink: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0;
+   transition: transform;
+   transition-duration: 150ms;
+}
+
+.btn:active,
+.icon-btn:active {
+   transform: scale(0.9);
+}
+
+.icon-btn {
+   padding: 0.25rem;
+   background: white;
+   border: 1px solid var(--border-color);
+   border-radius: 0.25rem;
+}
+
 /* ANCHOR Component Styles */
+/* Header Section */
+#header.container {
+   padding: 1rem 1.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo-container {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.logo-container > .logo {
+   width: 2rem;
+   height: 2rem;
+}
+
+.navigation {
+   display: none;
+}
+
+.nav-menu > li:hover > a {
+   color: var(--primary-color);
+}
 
 /* ANCHOR Responsive Styles (Tablet) */
 @media (min-width: 768px) {
+   body,
+   button,
+   input {
+      font-size: 16px;
+   }
+
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   h2 {
+      font-size: 1.75rem;
+   }
+
+   h3 {
+      size: 1.25rem;
+   }
+
+   #header.container {
+      padding: 1rem 2rem;
+   }
+
+   .icon-btn {
+      display: none;
+   }
+
+   .navigation {
+      display: block;
+   }
+
+   .nav-menu {
+      display: flex;
+      gap: 2rem;
+   }
 }
 
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
+   #header.container {
+      padding: 1rem 0;
+   }
+
+   .nav-menu {
+      gap: 2.75rem;
+   }
 }
 
 /* ANCHOR Utilities */
+.border {
+   border: 1px solid var(--border-color);
+}
+
+.icon {
+   width: 1.5rem;
+   height: 1.5rem;
+}
+
 .text-center {
    text-align: center;
 }
