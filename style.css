@@ -1,0 +1,41 @@
+/* ANCHOR Base */
+:root {
+   --primary-color: #ff5400;
+   --text-secondary: #5a5a5a;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body,
+button,
+input {
+   font-family: "Mulish", sans-serif;
+   font-size: 14px;
+}
+
+/* ANCHOR Component Styles */
+
+/* ANCHOR Responsive Styles (Tablet) */
+@media (min-width: 768px) {
+}
+
+/* ANCHOR Responsive Styles (Desktop) */
+@media (min-width: 1200px) {
+}
+
+/* ANCHOR Utilities */
+.text-center {
+   text-align: center;
+}
+
+.text-primary {
+   color: var(--primary-color);
+}
+
+.text-secondary {
+   color: var(--text-secondary);
+}
