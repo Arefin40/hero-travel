@@ -174,12 +174,15 @@ a {
 }
 
 .find-trip-form {
+   padding: 1rem;
    margin-top: 3rem;
    display: grid;
    column-gap: 1.5rem;
    row-gap: 1rem;
    width: 100%;
    max-width: 25rem;
+   border-radius: 0.5rem;
+   background-color: #fafafa4d;
 }
 
 /* Popular Tours Section */
@@ -601,8 +604,6 @@ a {
    .find-trip-form {
       padding: 1rem;
       max-width: 50rem;
-      border-radius: 0.5rem;
-      background-color: #fafafa4d;
       grid-template-columns: repeat(4, 1fr);
    }
 
