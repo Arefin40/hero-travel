@@ -39,6 +39,17 @@ li {
    list-style: none;
 }
 
+ul.list {
+   margin-left: 1rem;
+   display: grid;
+   row-gap: 0.75rem;
+}
+
+ul.list > li {
+   list-style: disc;
+   line-height: 1.625;
+}
+
 a {
    text-decoration: none;
    color: inherit;
@@ -184,16 +195,6 @@ a {
    display: grid;
    row-gap: 1rem;
    align-content: start;
-}
-
-.popular-tour-section ul.list {
-   margin-left: 1rem;
-   display: grid;
-   row-gap: 0.75rem;
-}
-
-.popular-tour-section ul.list > li {
-   list-style: disc;
 }
 
 .popular-tour-section > .image {
@@ -347,6 +348,25 @@ a {
    margin-top: 1.5rem;
 }
 
+/* Video Section */
+.video-section {
+   display: grid;
+   align-content: start;
+   row-gap: 1.5rem;
+   column-gap: 3.5rem;
+}
+
+.video-section > .video {
+   width: 100%;
+   aspect-ratio: 16 / 9;
+   border-radius: 1rem;
+}
+
+.video-section > .left-column > .list {
+   margin-top: 1.5rem;
+   margin-bottom: 2rem;
+}
+
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
    body,
@@ -365,6 +385,10 @@ a {
 
    h3 {
       size: 1.25rem;
+   }
+
+   ul.list {
+      row-gap: 1rem;
    }
 
    .container {
@@ -439,10 +463,6 @@ a {
 
    .popular-tour-section .left-column {
       row-gap: 1.5rem;
-   }
-
-   .popular-tour-section ul.list {
-      row-gap: 1rem;
    }
 
    /* R: Choose Destination Section */
@@ -522,6 +542,21 @@ a {
 
    .deals_and_discount .all-packages-btn {
       margin-top: 3rem;
+   }
+
+   /* R: Video Section */
+   .video-section {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .video-section > .video {
+      height: 100%;
+      aspect-ratio: auto;
+   }
+
+   .video-section > .list {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
    }
 }
 
