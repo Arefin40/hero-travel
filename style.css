@@ -128,8 +128,8 @@ a {
 .main-content {
    display: grid;
    row-gap: 3.5rem;
-   margin-top: 3.5rem;
-   margin-bottom: 3.5rem;
+   margin-top: 0.5rem;
+   margin-bottom: 2rem;
 }
 
 /* Header Section */
@@ -423,6 +423,36 @@ a {
    transform-origin: left bottom;
 }
 
+/* Footer Section */
+.footer-area {
+   background-color: var(--secondary-color);
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.footer-area > .footer-section {
+   max-width: 54.5rem;
+   display: grid;
+   justify-items: center;
+}
+
+.footer-section > .description {
+   margin-top: 1rem;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+
+.footer-section > .socials {
+   margin-top: 1rem;
+   margin-bottom: 1.5rem;
+   padding-bottom: 1.5rem;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   column-gap: 2rem;
+   border-bottom: 1px solid var(--border-color);
+}
+
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
    body,
@@ -456,7 +486,7 @@ a {
 
    .main-content {
       row-gap: 5.25rem;
-      margin-top: 5.25rem;
+      margin-top: 0rem;
       margin-bottom: 5.25rem;
    }
 
@@ -472,6 +502,11 @@ a {
    }
 
    /* R: Header Section */
+   .header-section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+   }
+
    .icon-btn {
       display: none;
    }
@@ -632,6 +667,23 @@ a {
 
    .newsletter-form {
       row-gap: 1.5rem;
+   }
+
+   /* Footer Section */
+   .footer-area {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+   }
+
+   .footer-section > .description {
+      padding-left: 3rem;
+      padding-right: 3rem;
+   }
+
+   .footer-section > .socials {
+      margin-top: 2.25rem;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
    }
 }
 
