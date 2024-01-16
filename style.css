@@ -245,6 +245,46 @@ a {
       url("images/Bandarban.png");
 }
 
+/* Why Choose Us Section */
+.choose-us-features {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   justify-content: center;
+}
+
+.choose-us-features > .card {
+   padding: 2rem;
+   border-radius: 1rem;
+   max-width: 35.75rem;
+   width: 100%;
+}
+
+.choose-us-features > .card:nth-child(1) {
+   background-color: #fffbf7;
+   border: 1px solid #feedd9;
+}
+
+.choose-us-features > .card:nth-child(2) {
+   background-color: #f4fdff;
+   border: 1px solid #cbf4fd;
+}
+
+.choose-us-features > .card:nth-child(3) {
+   background-color: #fef6f6;
+   border: 1px solid #fad2d2;
+}
+
+.choose-us-features > .card > .icon {
+   width: 3rem;
+   height: 3rem;
+}
+
+.choose-us-features > .card > .title {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
    body,
@@ -375,6 +415,20 @@ a {
    }
    .image-7 {
       grid-area: 3 / 6 / span 1 / span 7;
+   }
+
+   /* R: Why Choose Us Section */
+   .choose-us-features {
+      gap: 1.5rem;
+   }
+
+   .choose-us-features > .card > .icon {
+      width: 4rem;
+      height: 4rem;
+   }
+
+   .choose-us-features > .card > .title {
+      margin-top: 2rem;
    }
 }
 
