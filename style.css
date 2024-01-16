@@ -1,6 +1,7 @@
 /* ANCHOR Base */
 :root {
    --primary-color: #ff5400;
+   --secondary-color: #f3f3f3;
    --text-secondary: #5a5a5a;
    --border-color: lightgray;
 }
@@ -367,6 +368,61 @@ a {
    margin-bottom: 2rem;
 }
 
+/* Newsletter section */
+.newsletter-section {
+   display: grid;
+   gap: 1.5rem;
+   align-content: start;
+}
+
+.newsletter-form-container {
+   padding: 1.5rem;
+   border-radius: 1rem;
+   border: 1px solid var(--primary-color);
+}
+
+.newsletter-form-container > .description {
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid var(--border-color);
+}
+
+.newsletter-form {
+   display: grid;
+   row-gap: 1rem;
+}
+
+.newsletter-form > .input {
+   background-color: var(--secondary-color);
+}
+
+.newsletter-form > .btn {
+   font-size: 1.25rem;
+   font-weight: 700;
+}
+
+.newsletter-banner {
+   position: relative;
+   background-image: url("images/NewsletterBanner.png");
+   border-radius: 1rem;
+   min-height: 20rem;
+}
+
+.newsletter-banner > .discount {
+   position: absolute;
+   bottom: 0;
+   right: -0.9rem;
+   display: grid;
+   justify-items: center;
+   padding: 1.5rem 2.5rem;
+   border-radius: 1rem;
+   background-color: var(--primary-color);
+
+   transform: rotate(-19.63deg);
+   transform-origin: left bottom;
+}
+
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
    body,
@@ -557,6 +613,25 @@ a {
    .video-section > .list {
       margin-top: 1rem;
       margin-bottom: 1.5rem;
+   }
+
+   /* R: Newsletter section */
+   .newsletter-section {
+      grid-template-columns: 5fr 7fr;
+   }
+
+   .newsletter-form-container {
+      padding: 2.5rem;
+   }
+
+   .newsletter-form-container > .description {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+   }
+
+   .newsletter-form {
+      row-gap: 1.5rem;
    }
 }
 
