@@ -108,6 +108,8 @@ a {
 .heading,
 .sub-heading {
    margin-bottom: 1rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
 }
 
 /* ANCHOR Component Styles */
@@ -198,6 +200,51 @@ a {
    width: 100%;
 }
 
+/* Choose Destination Section */
+.destination-gallery {
+   display: grid;
+   gap: 1rem;
+}
+
+.destination-gallery > .image-box {
+   aspect-ratio: 16 / 9;
+   border-radius: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.25rem;
+   width: 100%;
+}
+
+.image-1 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/Maldives.png");
+}
+.image-2 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/Indonesia.png");
+}
+.image-3 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/Srilanka.png");
+}
+.image-4 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/NorthAmerica.png");
+}
+.image-5 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/Kashmir.png");
+}
+.image-6 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/Bangladesh1.png");
+}
+.image-7 {
+   background-image: linear-gradient(to bottom, #131318bf, #13131800),
+      url("images/Bandarban.png");
+}
+
 /* ANCHOR Responsive Styles (Desktop) */
 @media (min-width: 1200px) {
    body,
@@ -237,6 +284,9 @@ a {
 
    .sub-heading {
       margin-bottom: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 40.375rem;
    }
 
    /* R: Header Section */
@@ -291,6 +341,40 @@ a {
 
    .popular-tour-section ul.list {
       row-gap: 1rem;
+   }
+
+   /* R: Choose Destination Section */
+   .destination-gallery {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+   }
+
+   .destination-gallery > .image-box {
+      font-size: 1.75rem;
+      aspect-ratio: auto;
+      height: 18.75rem;
+   }
+
+   .image-1 {
+      grid-area: 1 / 1 / span 1 / span 6;
+   }
+   .image-2 {
+      grid-area: 1 / 7 / span 1 / span 6;
+   }
+   .image-3 {
+      grid-area: 2 / 1 / span 1 / span 4;
+   }
+   .image-4 {
+      grid-area: 2 / 5 / span 1 / span 5;
+   }
+   .image-5 {
+      grid-area: 2 / 10 / span 1 / span 3;
+   }
+   .image-6 {
+      grid-area: 3 / 1 / span 1 / span 5;
+   }
+   .image-7 {
+      grid-area: 3 / 6 / span 1 / span 7;
    }
 }
 
